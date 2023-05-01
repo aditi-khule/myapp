@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<title>Vaccino App</title>
+<style>
+    .btn{
+        background-color: #7FFFD4;
+        border: 2px solid black;
+        color: green;
+        padding: 5px 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 20px;
+        margin: 10px 30px;
+        cursor: pointer;
+    }
+</style>
+<h1><b>WELCOME TO OUR VACCINO APP!!!</b></h1><br><br>
+</head>
+<body>
+    <a href='{{ url_for('check_status') }}'>
+        <button class="btn">
+            Check Vaccination Status
+        </button>
+
+    <br><br>
+    <a href='{{ url_for('users') }}'>
+        <button class="btn">
+            All Users
+        </button>
+</body>
+</html>
